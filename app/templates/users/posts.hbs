@@ -1,0 +1,8 @@
+<ul>
+{{#each post in controller}}
+  <li>
+    {{ post.id }} - {{ post.title }} - {{ post.shortTitle }}
+    <a href="#" {{action 'delete' post}}>delete</a>
+  </li>
+{{/each}}
+</ul>

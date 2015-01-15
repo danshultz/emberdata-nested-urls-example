@@ -1,0 +1,9 @@
+<ul>
+{{#each user in controller}}
+  <li>
+    {{#link-to 'users.posts' user}}
+    {{ user.id }} - {{ user.name }}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>
